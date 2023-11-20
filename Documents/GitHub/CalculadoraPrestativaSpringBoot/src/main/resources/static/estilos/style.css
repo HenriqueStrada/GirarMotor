@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #3F5D63;
+    color: white;
+}
+.perfis {
+     display: inline-block; /* Torna os elementos .github em linha */
+     margin-right: 10px; /* Adiciona uma margem à direita para espaçamento */
+ }
+.cabecalho{
+    width: 100%;
+    background-color: #537780;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+.cabecalho_link:hover {
+    background: #272727;
+    transform: scale(1.1);
+}
+.cabecalho_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+.cabecalho_link {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid ;
+    max-width: 200px;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+}
+.cabecalho_link::before,
+.cabecalho_link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 4px; /* Aumente a altura para 4px */
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+.cabecalho_link::before {
+    left: 50%;
+    transform: translateX(-100%);
+}
+.cabecalho_link::after {
+    right: 50%;
+    transform: translateX(100%);
+}
+.cabecalho_link:hover::before,
+.cabecalho_link:hover::after {
+    width: 50%;
+    transform: translateX(0);
+}
+
+.titulo{
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.875rem;
+    width: 50%;
+}
+.subTitulo{
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.875rem;
+    width: 50%;
+    color: aqua;
+}
+.selecione{
+    color: aqua;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.375rem;
+    width: 50%;
+}
+
+.apresentacao{
+    margin: 8% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.imagem{
+    height: 50%;
+    width: 50%;
+}
+.github{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Krona One', sans-serif;
+    gap: 20px;
+}
+.github_sub{
+    font-weight: 400;
+    font-size: 1.5rem;
+    width: 50%;
+}
+.github_link{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    font-size: 1.375rem;
+    padding: 21px;
+    text-decoration: none;
+    color: white;
+}
+.github_link:hover {
+    background: #272727;
+    animation: pulse 1s infinite;
+}
+
+.flexButton{
+    display: flex;
+    flex-wrap: wrap;
+}
+.myButton {
+    font-family: 'Krona One', sans-serif;
+    font-size: 1rem;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 16px;
+    background-color: #537780;
+    color: white;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.myButton:hover {
+    background: #272727;
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.botao-menor {
+    font-family: 'Krona One', sans-serif;
+    font-size: 0.75rem;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 16px;
+    background-color: #007A7A;
+    color: white;
+}
+.rodaPe{
+    padding: 18px;
+    background: #537780;
+    text-align: center;
+    color: black;
+    font-family: 'bond', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.bt-image {
+    flex-direction: column-reverse;
+    background: url("down-arrow-regular-24.png") no-repeat;
+    height: 30px;
+    width: 30px;
+}
+#medida img {
+    transition: transform 0.5s;
+}
+#ang img{
+    transition: transform 0.5s;
+}
+
